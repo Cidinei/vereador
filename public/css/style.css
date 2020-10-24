@@ -1,0 +1,212 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        height: 100vh;
+        color: rgba(59, 107, 209, 0.863);
+    }
+    
+     :root {
+        font-size: 62.5%;
+    }
+    
+    body,
+    input,
+    button,
+    textarea {
+        font: 400 18px/1 'Roboto';
+    }
+    
+    #page-landing {
+        text-align: center;
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #page-landing .container {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        max-height: 680px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #top p {
+        color: rgb(43, 13, 177);
+        font-family: 'Bangers', cursive;
+        font-size: 10rem;
+        margin-bottom: 5rem;
+    }
+    
+    #top p strong {
+        font-family: 'Gloss And Bloom', cursive;
+        font-size: 7rem;
+        color: rgba(40, 182, 27, 0.616);
+    }
+    
+    .container .partido {
+        width: 135px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .container .rede {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .candidato {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .candidato img {
+        background: rgb(7, 199, 33);
+        margin-right: 0;
+        border: none;
+        border-radius: 10rem;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .candidato h1 {
+        font-family: 'Bangers', cursive;
+        font-size: 200px;
+        font-weight: 400;
+        color: darkblue;
+        margin: auto;
+        display: flex;
+    }
+    
+    .candidato h2 {
+        font-family: 'Anton', sans-serif;
+        font-size: 150px;
+        color: rgb(68, 49, 231);
+        margin: auto;
+        display: flex;
+    }
+    
+    .candidato h3 {
+        font-size: 100px;
+        margin: auto;
+        display: flex;
+    }
+    
+    .text p {
+        margin: 3rem;
+        justify-content: center;
+    }
+    
+    .text p strong {
+        font-weight: 900;
+        color: darkblue;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .container .partido {
+            width: 5rem;
+            height: 3rem;
+            position: absolute;
+            right: 2rem;
+        }
+        #top p {
+            font-size: 3rem;
+            margin-left: auto;
+            margin-bottom: 5rem;
+        }
+        #top p strong {
+            font-size: 2.2rem;
+        }
+        .candidato img {
+            width: 17rem;
+            height: 17rem;
+            margin: 1rem;
+            border-radius: 5rem;
+        }
+        .candidato h1 {
+            font-size: 7rem;
+        }
+        .candidato h2 {
+            font-size: 4rem;
+        }
+        .candidato h3 {
+            font-size: 3rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .container .partido {
+            width: 5rem;
+            height: 3rem;
+            right: 2rem;
+            top: 2rem;
+        }
+        #top p {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+        }
+        #top p strong {
+            font-size: 1.8rem;
+        }
+        .candidato img {
+            width: 15rem;
+            height: 15rem;
+            margin: 1rem;
+            border-radius: 5rem;
+        }
+        .candidato h1 {
+            font-size: 6rem;
+        }
+        .candidato h2 {
+            font-size: 4rem;
+        }
+        .candidato h3 {
+            font-size: 3rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+    /* animaçoes */
+    
+    @keyframes up {
+        from {
+            opacity: 0;
+            transform: translatey(16px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-up {
+        animation-name: up;
+        animation-duration: 300ms;
+        animation-fill-mode: backwards;
+    }
+    
+    #candidato {
+        animation-delay: 50ms;
+    }
+    
+    .localion {
+        animation-delay: 100ms;
+    }
